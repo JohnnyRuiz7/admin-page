@@ -1,0 +1,28 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 20rem;
+    background-color: rgb(57, 166, 255);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li span {
+    position: relative;
+    left: 50px;
+}
