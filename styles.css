@@ -19,6 +19,7 @@ body {
     padding-left: 20px;
     padding-right: 30px;
     width: 15%;
+    height: 100%;
     row-gap: 10px;
     background-color: rgb(57, 166, 255);
     color: rgb(255, 255, 255);
@@ -78,10 +79,11 @@ li {
 }
 
 .top-page {
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 2vh 3em 0 2em;
     row-gap: 10px;
     height: 20%;
+    z-index: 1;
 }
 
 .search, 
@@ -141,7 +143,7 @@ input {
 }
 
 .user-avatar-big {
-    width: 90px;
+    width: 80px;
     border-radius: 50%;
 }
 
@@ -175,7 +177,7 @@ input {
 }
 
 .content {
-    width: 70%;
+    width: 75%;
     height: 100%;
     flex-wrap: wrap;
     display: flex;
@@ -183,7 +185,7 @@ input {
     justify-content: flex-start;
     align-items: flex-start;
     row-gap: 15px;
-    padding: 5em 0 0 2em;
+    padding: 0 0 0 2em;
 }
 
 .cards {
@@ -196,12 +198,13 @@ input {
 
 .card {
     font-size: 0.8em;
+    color: rgb(88, 88, 88);
     background-color: white;
     border-radius: 10px;
     box-shadow: inset 1em 0px gold;
     width: 25%;
-    height: 50%;
-    padding: 20px;
+    height: 60%;
+    padding: 20px 20px 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,16 +221,75 @@ input {
     height: auto;
 }
 
+.card-icons>div:hover {
+    cursor: pointer;
+}
+
 .content-header {
     font-weight: 700;
-    width: 70%;
+    width: 100%;
     font-size: 20px;
+    margin-top: 32px;
 }
 
 .side-content {
-    width: 30%;
-    height: 100%;
+    width: 25%;
+    height: 95%;
+    padding: 2em 2em 0 0;
+    gap: 15px;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.announcements, .trending {
+    background-color: white;
+    border-radius: 10px;
     font-size: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 0 30px;
+}
+
+.announcements>div:nth-child(even) {
+    border-top: 1px #e2e8f0 solid;
+    border-bottom: 1px #e2e8f0 solid;
+    padding: 15px 0;
+}
+
+.announcements>div {
+    color: rgb(88, 88, 88);
+}
+
+.trending-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+
+.trending {
+    font-size: 0.8em;
+}
+
+.trending>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.trending>div>div>p {
+    margin: 0;
+    color: rgb(88, 88, 88);
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
